@@ -1,0 +1,129 @@
+.accordion {
+ // border-bottom: 1px solid #ddd;
+}
+
+.accordion-item {
+  // border-top: 1px solid #ddd;
+  // border-left: 1px solid #ddd;
+  // border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;;
+  margin: 40px auto;
+}
+
+.accordion-item-header {
+  padding: 10px 15px;
+ // background: #a4b4bf;
+ position: relative;
+  color: #212121;
+  cursor: pointer;
+  font-family: 'Montserrat-regular';
+  font-size: 14px;
+  line-height: 17px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+    line-height: 29px;
+    letter-spacing: -0.01em;
+
+  }
+
+}
+
+
+.accordion-item-header::after {
+  background-image: url('../img/svg/plus.svg');
+  content: '';
+  width:20px;
+  height: 20px;
+  display: inline-block;
+
+}
+
+
+.accordion-item-header::after {
+  background-image: url('../img/svg/plus.svg');
+  content: '';
+  width:20px;
+  height: 20px;
+  display: inline-block;
+  position: absolute;
+  right:10px;
+}
+
+.accordion-item.show .accordion-item-header::after {
+  background-image: url('../img/svg/line.svg');
+  content: '';
+  width:19px;
+  height: 19px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-position: 0 10px;
+
+}
+
+
+.accordion-item-content {
+  background: #fff;
+  transition: opacity .4s ease;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+
+
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: -0.01em;
+  color: #212121;
+
+ @media (min-width: 768px) {
+  font-size: 19px;
+  line-height: 23px;
+ }
+
+}
+
+.accordion-item.show .accordion-item-content {
+  padding: 10px 15px;
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+}
+
+.accordion-item.show .accordion-item-header {
+  //background: #1e4bd2;
+  color: #212121;
+  //color: #fff;
+ // border-bottom: 1px solid #ddd;
+  font-family: 'Montserrat-bold';
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: -0.01em;
+
+
+
+
+  .accordion-item.show .accordion-item-header::after {
+    background-image: url('../img/svg/line.svg');
+    content: '';
+    width:20px;
+    height: 20px;
+    display: inline-block;
+
+  }
+
+
+
+@media (min-width: 768px) {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+
+
+
+}
+
+
+
+
+

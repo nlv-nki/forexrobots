@@ -1,0 +1,13 @@
+.header {
+  position: relative;
+  padding-top:15px;
+  &__logo {
+    font-size: 26px;
+    line-height: 32px;
+
+    span {
+      font-weight: 800;
+    }
+  }
+
+}

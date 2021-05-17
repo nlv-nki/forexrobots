@@ -1,0 +1,37 @@
+.accordion {
+  border-bottom: 1px solid #ddd;
+}
+
+.accordion-item {
+  border-top: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+.accordion-item-header {
+  padding: 10px 15px;
+  background: #a4b4bf;
+  color: #fff;
+  cursor: pointer;
+}
+
+.accordion-item-content {
+  background: #fff;
+  transition: opacity .4s ease;
+  visibility: hidden;
+  height: 0;
+  opacity: 0;
+}
+
+.accordion-item.show .accordion-item-content {
+  padding: 10px 15px;
+  visibility: visible;
+  height: auto;
+  opacity: 1;
+}
+
+.accordion-item.show .accordion-item-header {
+  background: #3498db;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+}

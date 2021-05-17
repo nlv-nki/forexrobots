@@ -1,0 +1,132 @@
+.what-is {
+
+  &__title {
+    font-size: 21px;
+    line-height: 26px;
+    font-family: 'Montserrat-bold';
+    color: #212121;
+    background-color: transparent;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  &__text {
+    font-family: 'Montserrat-regular';
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.02em;
+    padding: 11px;
+  }
+  &__wrapper {
+    background: #FFFFFF;
+    border-radius: 10px;
+    padding: 27px 15px 15px;
+    position: relative;
+  }
+
+  &__box {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    @media (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+
+  &__box {
+    @media (min-width: 768px) {
+      flex-direction: row;
+      justify-content: space-between;
+
+    }
+  }
+
+  &__box:last-child{
+    flex-wrap: wrap;
+
+
+
+      @media (min-width: 768px) {
+        .what-is__box-image{
+          order: -1;
+        }
+        .what-is__box-textcontent:first-child {
+          align-self: center;
+        }
+        .what-is__box-textcontent:last-child {
+          margin-right: auto;
+          margin-left: auto;
+          margin-top: 70px;
+        }
+      }
+
+      .what-is__box-textcontent:last-child {
+        max-width: 600px;
+      }
+      @media (max-width: 968px) {
+        .what-is__box-textcontent:last-child {
+          max-width: 500px;
+        }
+
+      }
+
+    }
+
+  &__box-textcontent {
+    margin: 21px 0;
+    @media (min-width: 968px) {
+      max-width: 500px;
+    }
+    @media (min-width: 768px) {
+      max-width: 290px;
+    }
+  }
+
+  &__box--reverse {
+   // flex-direction:column-reverse;
+    @media (min-width: 768px) {
+      flex-direction: row-reverse;
+    }
+
+  }
+
+  &__wrapper::before {
+    content: " ";
+    position: absolute;
+    background: #4296D4;
+    opacity: 0.09;
+    border-radius: 7px;
+    top: 111px;
+    right:22px;
+    width: 114px;
+    height: 70px;
+
+    @media (min-width: 768px) {
+      width: 282px;
+      height: 253px;
+      top: 175px;
+      right:42px;
+    }
+
+  }
+
+  &__wrapper::after {
+    content: " ";
+    position: absolute;
+    background: #4296D4;
+    opacity: 0.09;
+    border-radius: 7px;
+    bottom: 16px;
+    left:5px;
+    width: 114px;
+    height: 70px;
+    @media (min-width: 768px) {
+      width: 415px;
+      height: 253px;
+      bottom: 122px;
+      left:91px;
+    }
+
+  }
+
+
+}

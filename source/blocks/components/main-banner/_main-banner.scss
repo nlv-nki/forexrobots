@@ -1,0 +1,66 @@
+.main-banner {
+  min-height: 581px;
+  text-align: center;
+  background-image: url("../img/content/culture-11.jpg");
+  //padding: 60px 30px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__text-wrapper {
+    padding: 60px 30px 5px;
+  }
+  &__title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 119.7%;
+    font-family: 'Montserrat-bold';
+    color: #FFFFFF;
+    background-color: transparent;
+    margin-bottom: 30px;
+
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    @media (min-width: 968px) {
+      flex-direction: row;
+      min-height: inherit;
+    }
+
+  }
+
+  &__text {
+    font-family: 'Montserrat-regular';
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    span {
+      font-family: 'Montserrat-bold';
+      color: #FFFFFF;
+
+    }
+  }
+
+  &__btn-mobile {
+    font-size: 14px;
+    line-height: 17px;
+    background: #1E4BD2;
+    border-color: transparent;
+    border-radius: 4px;
+    color: #FFFFFF;
+    padding:12px 37px;
+    margin-bottom: 70px;
+    @media (min-width: 968px) {
+     display:none;
+
+    }
+  }
+}
+
+

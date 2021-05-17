@@ -1,0 +1,38 @@
+.social-icons {
+display:flex;
+justify-content: space-between;
+align-items:center;
+width: 140px;
+margin:22px auto 0;
+&__icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+
+&__icon:hover {
+  fill:#1e4bd2;
+}
+
+}
+
+
+.social-icons--footer {
+  margin-bottom: auto;
+  justify-content: flex-end;
+  margin: 8px 0 auto auto;
+
+  .social-icons__icon{
+    width: 15.26px;
+    height: 15.26px;
+    fill:#fff;
+    opacity: 1;
+    margin-right:8px;
+
+
+  }
+  .social-icons__icon::last-child{
+    margin-right:0;
+  }
+
+}

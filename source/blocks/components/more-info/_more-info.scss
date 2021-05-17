@@ -1,0 +1,60 @@
+.more-info {
+  position: absolute;
+  background: #F3F7FA;
+  border-radius: 8px;
+  min-width: 347px;
+  min-height: 460px;
+  padding: 30px 15px ;
+  bottom: -470px;
+  margin: 0 15px;
+  @media (min-width: 968px) {
+    position: relative;
+    bottom:auto;
+    min-width: 440px;
+    width: 440px;
+
+  }
+
+
+  &__title {
+    font-family: 'Montserrat-bold';
+    background-color: transparent;
+    font-size: 19px;
+    line-height: 23px;
+    margin-bottom: 5px;
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    font-family: 'Montserrat-regular';
+
+  }
+
+  &__form {
+    margin:30px 0 0;
+  }
+
+  &__form-input {
+    min-width:295px;
+    height: 52px;
+    box-shadow: 2px 2px 18px rgba(0, 0, 0, 0.07);
+    border-radius: 4px;
+    background: #F3F7FA;
+    margin-bottom: 20px;
+    border-width: 0;
+    padding-left: 15px;
+  }
+
+  &__form-input ::placeholder {
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__input-wrapper {
+    margin-bottom: 50px;
+
+  }
+
+}
