@@ -10,4 +10,4 @@
 
 ### Быстрые ссылки
 
-* [Главная](https://nlv-nki.github.io/motoshop/public/index.html)
+* [Главная](https://nlv-nki.github.io/forexrobots/public/index.html)
