@@ -1,6 +1,12 @@
 .header {
   position: relative;
   padding-top:15px;
+  &__hamburger {
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+
   &__logo {
     font-size: 26px;
     line-height: 32px;
