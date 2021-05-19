@@ -1,4 +1,4 @@
-body,h1,h2,h3 {
+body {
   font-weight: 400;
   font-size: 20px;
   line-height:25px;
@@ -11,9 +11,6 @@ span,p,a {
   color: $text-color;
 }
 
-section {
-  //margin-bottom: 80px;
-}
 
 img {
   max-width: 100%;

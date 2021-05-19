@@ -11,7 +11,7 @@ let swiper = new Swiper('.swiper-container', {
 // when window width is >= 480px
 480: {
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
   direction: 'vertical', // вертикальная прокрутка
   slidesPerColumnFill: 'row',
 
@@ -19,19 +19,18 @@ let swiper = new Swiper('.swiper-container', {
 // when window width is >= 640px
 640: {
   slidesPerView: 3,
-  spaceBetween: 40,
+  spaceBetween: 20,
   direction: 'vertical',
 },
 
 768: {
   slidesPerView: 3,
-  spaceBetween: 40,
   direction: 'horizontal',}
 
 },
 direction: 'horizontal',
   slidesPerView: 3,
-  spaceBetween: 30,
+  spaceBetween: 20,
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
