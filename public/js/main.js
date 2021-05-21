@@ -148,12 +148,7 @@ const scrollWindow = () => {
   }
 }
 const backToTop = () => {
-  let height_win = document.documentElement.clientHeight
-  if (window.pageYOffset > height_win / 3) {
-    window.scrollBy(0, -10);
-    setTimeout(backToTop, 0);
-  }
-
+  window.scrollTo({top:0, behavior: "smooth"})
 }
 window.addEventListener('scroll',scrollWindow);
 back_to_top_btn.addEventListener('click',backToTop)
