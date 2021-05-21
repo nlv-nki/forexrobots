@@ -25,6 +25,17 @@
   &__item {
     display: inline;
     margin: 10px;
+    margin-right: 48px;
+  }
+
+  &__item-link {
+    font-size: 14px;
+    line-height: 17px;
+    text-decoration: none;
+  }
+
+  &__item-link:hover {
+    color: #007AFF;
   }
 
 }
