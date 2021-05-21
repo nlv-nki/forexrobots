@@ -23,6 +23,7 @@
  &__list-item {
    list-style: none;
    margin-bottom: 12px;
+   position: relative;
  }
 
 
@@ -32,11 +33,17 @@
   height: 2px;
   background-color: #212121;
   display: inline-block;
-  vertical-align: middle;
   margin-right: 12px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+
  }
 
  &__link {
    text-decoration: none;
+   max-width: 350px;
+   display: inline-block;
+   margin-left: 30px;
  }
 }
